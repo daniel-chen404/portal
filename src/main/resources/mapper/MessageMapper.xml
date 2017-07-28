@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.dj.dao.MessageDao">
+    <resultMap id="result" type="com.dj.model.Message">
+        <id column="id" property="id"/>
+        <id column="title" property="title"/>
+        <id column="content" property="content"/>
+        <id column="customer" property="customer"/>
+        <id column="company" property="company"/>
+        <id column="address" property="address"/>
+        <id column="phone" property="phone"/>
+        <id column="mobile" property="mobile"/>
+        <id column="fax" property="fax"/>
+        <id column="createDate" property="createDate"/>
+        <id column="modifyDate" property="modifyDate"/>
+        <id column="email" property="email"/>
+        <id column="remark" property="remark"/>
+    </resultMap>
+
+    <insert id="save" parameterType="com.dj.model.Message">
+        INSERT INTO t_message VALUES (null,#{title},#{content},#{customer},#{company},#{address},#{phone},#{mobile},#{fax},#{createDate},#{modifyDate},#{email},#{remark})
+    </insert>
+
+    <select id="countPage" resultType="java.lang.Integer" parameterType="com.dj.model.Message">
+        select count(1) from t_message
+    </select>
+
+    <select id="pagerAtion" resultMap="result">
+       select * from t_message ORDER by createDate DESC
+        LIMIT #{startIndex}, #{pageSize}
+    </select>
+
+</mapper>

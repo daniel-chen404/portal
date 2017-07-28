@@ -1,0 +1,10 @@
+<div class="footer">
+    <ul>
+        <li><a href="$ctx/article/12" title="">公司简介</a></li>
+        <li><a href="$ctx/" title="">新闻中心</a></li>
+        <li><a href="$ctx/article/16" title="">资质荣誉</a></li>
+        <li><a href="$ctx/message" title="">在线留言</a></li>
+        <li><a href="$ctx/article/13" title="">联系我们</a></li>
+        <p class="copyright">版权所有 Copyright (R) 广州嘉汇工程咨询有限公司 备案号：粤ICP备17049304号-1 <a href=""> 备案查询</a></p>
+    </ul>
+</div>

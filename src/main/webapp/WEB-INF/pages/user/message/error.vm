@@ -1,0 +1,18 @@
+<div class="main">
+    <div class="warpper">
+        #parse("common/lefter.vm")
+        <div class="boxRight">
+            <section class="article-content clearfix article-page">
+                <section class="content-header">
+                    #if($error)
+                        <div class="callout callout-warning">
+                            <h4>在线留言消息</h4>
+
+                            <p>${error}</p>
+                        </div>
+                    #end
+                </section>
+            </section>
+        </div>
+    </div>
+</div>

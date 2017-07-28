@@ -1,0 +1,138 @@
+<style>
+    .tableCenter th, .tableCenter td {
+        text-align: center;
+        height: 38px;
+    }
+</style>
+
+<script language="javascript">
+    function delcfm() {
+        if (!confirm("确认要删除?")) {
+            window.event.returnValue = false;
+        }
+    }
+</script>
+<section class="content-header">
+    #if($error)
+        <div class="callout callout-warning">
+            <h4>上传文件出现问题</h4>
+
+            <p>${error}</p>
+        </div>
+    #end
+
+
+    #if($info)
+        <div class="callout callout-info">
+            <h4>提示信息:</h4>
+
+            <p>${info}</p>
+        </div>
+    #end
+</section>
+
+<section class="content">
+
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="box">
+                <div class="box-header">
+                    <h3 class="box-title">文件信息</h3>
+
+                    <div class="box-tools">
+                        <form method="post" action="$ctx/manage/file/search">
+                            <div class="input-group" style="width: 150px;">
+                                <input type="text" name="content" class="form-control input-sm pull-right"
+                                       placeholder="搜索文章(标题)">
+
+                                <div class="input-group-btn">
+                                    <button class="btn btn-sm btn-default"><i class="fa fa-search"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="box-body table-responsive no-padding">
+                    <table class="table table-hover tableCenter">
+                        <tbody>
+                        <tr>
+                            <th>文件名</th>
+                            <th>文件类型</th>
+                            <th>日期</th>
+                            <th>删除</th>
+                        </tr>
+                            #foreach($file in $fileList)
+                            <tr>
+                                <td>${file.name}</td>
+                                <td>
+                                    #if(${file.type}=='1')
+                                        招标文件发售等级表
+                                    #elseif(${file.type}=='2')
+                                        无行贿犯罪档案记录证明
+                                    #elseif(${file.type}=='3')
+                                        公平竞争承诺书
+                                    #elseif(${file.type}=='4')
+                                        其他
+                                    #end
+                                </td>
+                                <td>${file.createDate}</td>
+                                <td>
+                                    <button class="btn btn-block btn-danger btn-sm" onclick="delcfm()"><a
+                                            href="$ctx/manage/file/delete/${file.id}">删除</a></button>
+                                </td>
+                            </tr>
+                            #end
+                        </tbody>
+
+                    </table>
+                </div>
+
+                <div class="box-footer clearfix">
+                    <ul class="pagination pagination-sm no-margin pull-right">
+                        <li><a href="$ctx/manage/file/?currentPage=${pager.firstPage}">首页</a></li>
+
+                        #if(${pager.prePage}!=-1)
+                            <li><a href="$ctx/manage/file/?currentPage=${pager.prePage}">上一页</a></li>
+                        #else
+                            <li class="disabled"><a href="">上一页</a></li>
+                        #end
+                        #if(${pager.nextPage}==-1)
+                            #set($prePage = ${pager.currentPage} - 2)
+                            #if($prePage>0)
+                                <li><a href="$ctx/manage/file/?currentPage=${prePage}">${prePage}</a></li>
+                            #end
+                        #end
+
+                        #if(${pager.prePage} != -1)
+                            <li><a href="$ctx/manage/file/?currentPage=${pager.prePage}">${pager.prePage}</a></li>
+                        #end
+
+                        <li class="active"><a
+                                href="$ctx/manage/file/?currentPage=${pager.currentPage}">${pager.currentPage}</a>
+                        </li>
+
+                        #if(${pager.nextPage}!=-1)
+                            <li><a href="$ctx/manage/file/?currentPage=${pager.nextPage}">${pager.nextPage}</a></li>
+                        #end
+
+                        #if(${pager.prePage}==-1)
+                            #set($nextPage = ${pager.nextPage} + 1)
+                            #if($nextPage!=0)
+                                <li><a href="$ctx/manage/file/?currentPage=${nextPage}">${nextPage}</a></li>
+
+                            #end
+                        #end
+
+                        #if(${pager.nextPage}!= -1)
+                            <li><a href="$ctx/manage/file/?currentPage=${pager.nextPage}">下一页</a></li>
+                        #else
+                            <li class="disabled"><a href="">下一页</a></li>
+                        #end
+                        <li><a href="$ctx/manage/file/?currentPage=${pager.lastPage}">末页</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

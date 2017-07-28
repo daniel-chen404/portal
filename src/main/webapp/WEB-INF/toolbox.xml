@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+<tools>
+    <toolbox scope="request">
+        <tool class="org.apache.velocity.tools.view.CookieTool"/>
+        <tool class="org.apache.velocity.tools.view.ImportTool"/>
+        <tool class="org.apache.velocity.tools.view.IncludeTool"/>
+        <tool class="org.apache.velocity.tools.view.LinkTool"/>
+        <tool class="org.apache.velocity.tools.view.PagerTool"/>
+        <tool class="org.apache.velocity.tools.view.ParameterTool"/>
+        <tool class="org.apache.velocity.tools.view.ViewContextTool"/>
+        &lt;!&ndash;
+        This is not directly useable.
+        <tool class="org.apache.velocity.tools.view.AbstractSearchTool"/>
+        &ndash;&gt;
+        &lt;!&ndash; move this to request scope &ndash;&gt;
+        <tool class="org.apache.velocity.tools.generic.ResourceTool"/>
+    </toolbox>
+    <toolbox scope="session" createSession="false">
+        <tool class="org.apache.velocity.tools.view.BrowserTool"/>
+    </toolbox>
+</tools>
+-->
+<toolbox>
+    <tool>
+        <key>math</key>
+        <scope>application</scope>
+        <class>org.apache.velocity.tools.generic.MathTool</class>
+    </tool>
+</toolbox>

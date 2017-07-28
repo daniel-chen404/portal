@@ -1,0 +1,16 @@
+<div class="boxLeft">
+    <div class="tenderMenu">
+        <img src="$ctx/img/title.png" class="titleImg"/>
+        <ul>
+            <li><a href="$ctx/search/?categoryId=2">招标公示</a></li>
+            <li><a href="$ctx/search/?categoryId=3">澄清更正公告</a></li>
+            <li><a href="$ctx/search/?categoryId=4">中标公示</a></li>
+        </ul>
+    </div>
+
+    <ul class="contactList">
+        <li><a href="$ctx/article/13" title=""><i class="icon1"></i>联系方式</a></li>
+        <li><a href="$ctx/message" title=""><i class="icon2"></i>客户留言</a></li>
+    </ul>
+
+</div>

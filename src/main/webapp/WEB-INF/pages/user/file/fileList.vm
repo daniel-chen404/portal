@@ -1,0 +1,81 @@
+<div class="main">
+    <div class="warpper">
+        #parse("common/lefter.vm")
+        <div class="boxRight">
+            <div class="box-body table-responsive no-padding">
+                <table class="table table-hover tableCenter">
+                    <tbody>
+                    <tr>
+                        <th>文件名</th>
+                        <th>文件类型</th>
+                        <th>浏览</th>
+                    </tr>
+                        #foreach($file in $fileList)
+                        <tr>
+                            <td>${file.name}</td>
+                            <td>
+                                #if(${file.type}=='1')
+                                    招标文件发售等级表
+                                #elseif(${file.type}=='2')
+                                        无行贿犯罪档案记录证明
+                                #elseif(${file.type}=='3')
+                                    公平竞争承诺书
+                                #elseif(${file.type}=='4')
+                                    其他
+                                #end
+                            </td>
+                            <td><a href="$ctx/download?id=${file.id}">下载</a></td>
+                        </tr>
+                        #end
+                    </tbody>
+
+                </table>
+            </div>
+
+            <div class="box-footer clearfix">
+                <ul class="pagination pagination-sm no-margin pull-right">
+                    <li><a href="$ctx/search/?currentPage=${pager.firstPage}&categoryId=${categoryId}">首页</a></li>
+
+                    #if(${pager.prePage}!=-1)
+                        <li><a href="$ctx/search/?currentPage=${pager.prePage}&categoryId=${categoryId}">上一页</a></li>
+                    #else
+                        <li class="disabled"><a href="">上一页</a></li>
+                    #end
+                    #if(${pager.nextPage}==-1)
+                        #set($prePage = ${pager.currentPage} - 2)
+                        #if($prePage>0)
+                            <li><a href="$ctx/search/?currentPage=${prePage}&categoryId=${categoryId}">${prePage}</a></li>
+                        #end
+                    #end
+
+                    #if(${pager.prePage} != -1)
+                        <li><a href="$ctx/search/?currentPage=${pager.prePage}&categoryId=${categoryId}">${pager.prePage}</a></li>
+                    #end
+
+                    <li class="active"><a
+                            href="$ctx/search/?currentPage=${pager.currentPage}&categoryId=${categoryId}">${pager.currentPage}</a>
+                    </li>
+
+                    #if(${pager.nextPage}!=-1)
+                        <li><a href="$ctx/search/?currentPage=${pager.nextPage}&categoryId=${categoryId}">${pager.nextPage}</a></li>
+                    #end
+
+                    #if(${pager.prePage}==-1)
+                        #set($nextPage = ${pager.nextPage} + 1)
+                        #if($nextPage!=0)
+                            <li><a href="$ctx/search/?currentPage=${nextPage}&categoryId=${categoryId}">${nextPage}</a></li>
+
+                        #end
+                    #end
+
+                    #if(${pager.nextPage}!= -1)
+                        <li><a href="$ctx/search/?currentPage=${pager.nextPage}&categoryId=${categoryId}">下一页</a></li>
+                    #else
+                        <li class="disabled"><a href="">下一页</a></li>
+                    #end
+                    <li><a href="$ctx/search/?currentPage=${pager.lastPage}&categoryId=${categoryId}">末页</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

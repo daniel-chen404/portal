@@ -1,0 +1,73 @@
+<section class="content-header">
+    #if($error)
+        <div class="callout callout-warning">
+            <h4>上传文件失败</h4>
+            <p>${error}</p>
+        </div>
+    #end
+
+    #if($info)
+        <div class="callout callout-info">
+            <h4>操作信息</h4>
+            <p>${info}</p>
+        </div>
+    #end
+</section>
+<style>
+    .tableCenter th, .tableCenter td {
+        text-align: center;
+        height: 38px;
+    }
+</style>
+
+<script language="javascript">
+    function delcfm() {
+        if (!confirm("确认要删除？")) {
+            window.event.returnValue = false;
+        }
+    }
+</script>
+
+
+
+
+<section class="content">
+    <form id="filefrom" action="$ctx/manage/file/upload" method="post" enctype=”multipart/form-data>
+        <div class="row">
+            <div class="box box-default">
+                <div class="box-header with-border">
+                    <h6>创建文件:</h6>
+
+                    <div class="box-tools pull-right">
+                        <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                    </div>
+                </div>
+                <div class="box-body" style="display:block;">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="name">文件名:</label>
+                                <input type="text" name="name" class="form-control" id="name"
+                                       placeholder="请输入文件名称..."/>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="path">文件:</label>
+                                <input type="file" name="name" class="form-control" id="name"
+                                       placeholder="请选择本地文件..."/>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <label for="mybutton"></label>
+                            <button type="submit" id="mybutton" class="btn btn-block btn-default btn-flat"
+                                    >创建文件
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</section>

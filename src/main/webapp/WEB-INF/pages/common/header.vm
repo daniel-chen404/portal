@@ -1,0 +1,36 @@
+<div class="top">
+    <div class="warpper">
+        <p class="logo"><img src="$ctx/img/logo.png" title=""></p>
+        <div class="topRight">
+            <p><img src="$ctx/img/tel.png" title=""><a href="#" title="">设为首页</a>|<a href="#" title="">加入收藏</a></p>
+            <form method="post" action="$ctx/search">
+                <div class="form-group">
+
+                </div>
+                <p class="search">
+                    <input type="text" id="s_content" name="content" placeholder="Search Title" class="form-control"/>
+                    <button type="submit" >搜索</button>
+                </p>
+            </form>
+
+        </div>
+    </div>
+    <div class="nav">
+        <ul id='jsddm'>
+            <li><a href="$ctx" title="">首页</a></li>
+            <li><a href="$ctx/article/13" title="">关于我们</a></li>
+            <li><a href="$ctx/article/13" title="">业务范围</a></li>
+            <li><a href="$ctx/search/?categoryId=1" title="">政策法规</a></li>
+            <li><a href="$ctx/search/?categoryId=2" title="">招标信息</a>
+                <ul class="alink">
+                    <li><a href="$ctx/search/?categoryId=2">招标公告</a></li>
+                    <li><a href="$ctx/search/?categoryId=3">澄清更正公告</a></li>
+                    <li><a href="$ctx/search/?categoryId=4"">中标公示</a></li>
+                </ul>
+            </li>
+            <li><a href="$ctx/file" title="">下载专区</a></li>
+            <li><a href="$ctx/article/15" title="">人才招聘</a></li>
+            <li><a href="$ctx/article/13" title="">联系我们</a></li>
+        </ul>
+    </div>
+</div>

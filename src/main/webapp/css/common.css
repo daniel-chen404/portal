@@ -1,0 +1,145 @@
+body,
+button,
+select,
+textarea,
+input,
+label,
+option,
+fieldset,
+legend {
+    font-family: '黑体';
+    font-size: 12px;
+    line-height: 18px;
+    color: #6f6f6f;
+    background: #fff;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+legend,
+input,
+textarea,
+button,
+p,
+blockquote,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: none
+}
+
+.clear {
+    height: 1px;
+    overflow: hidden;
+    clear: both;
+}
+
+a,
+img {
+    border: 0;
+}
+
+a {
+    color: #0068b7;
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.nf {
+    clear: both;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: #00b500;
+    font-weight: bold;
+}
+
+.iconColor {
+    color: #e94b40
+}
+
+.ds {
+    display: block;
+}
+
+.hid {
+    overflow: hidden;
+}
+
+.clearfix {
+    *zoom: 1
+}
+
+.clearfix:after {
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0;
+    content: '.';
+    font-size: 0
+}
+
+.jianbian {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f4f4f4), color-stop(100%, #eee));
+    background: -webkit-linear-gradient(top, #f4f4f4 0, #eee 100%);
+    background: linear-gradient(to bottom, #f4f4f4 0, #eee 100%);
+}
+
+.bottomshadow {
+    border-bottom: solid 1px #B3B3B3;
+    -webkit-box-shadow: 0 1px 1px 0 #DFDFDF;
+    box-shadow: 0 1px 1px 0 #DFDFDF;
+}
+.bold{font-weight: bold}
+.font12{font-size: 12px}
+.font14{font-size: 14px}
+.font16{font-size: 16px}
+.font18{font-size: 18px}
+.gray1{color:#a0a0a0}
+.gray2{color:#707070}
+.gray3{color:#434343}
+.gray4{color: #535353}
+.gray5{color:#959595}
+.blue{color: #0068b7}
+.yellow{color:#eb6100 }
+.fontNormal{font-style: normal}
+.red1{color:#e94b40}
+.blueBg{background-color: #0068b7}
+.yellowBg{background-color:#eb6100 }
+.redBg{background-color: #e94b40}
+.black{color: black}
+.marginTop15{margin-top: 15px}

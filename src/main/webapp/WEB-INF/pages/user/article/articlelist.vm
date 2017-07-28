@@ -1,0 +1,84 @@
+<div class="main">
+    <div class="warpper">
+#*        <div id="slideBox" class="slideBox">
+            <div class="bd">
+                <ul>
+                    <li><img src="$ctx/img/banner.jpg" title="" /></li>
+                    <li><img src="$ctx/img/banner1.jpg" title="" /></li>
+                </ul>
+            </div>
+            <!-- 下面是前/后按钮代码，如果不需要删除即可 -->
+            <a class="prev" href="javascript:void(0)"></a>
+            <a class="next" href="javascript:void(0)"></a>
+
+        </div>*#
+
+        <script type="text/javascript">
+            jQuery(".slideBox").slide({mainCell:".bd ul",autoPlay:true});
+        </script>
+
+        <div class="box office">
+            <p class="title"><span>办公环境</span><a href="#" title="">more</a> </p>
+            <div id="slideBox1" class="slideBox1">
+                <div class="bd1">
+                    <ul>
+                        <li><img src="$ctx/img/office.jpg" title="" /></li>
+                        <li><img src="$ctx/img/img1.jpg" title="" /></li>
+                        <li><img src="$ctx/img/img.jpg" title="" /></li>
+                        <li><img src="$ctx/img/img4.jpg" title="" /></li>
+                    </ul>
+                </div>
+                <!-- 下面是前/后按钮代码，如果不需要删除即可 -->
+                <a class="prev" href="javascript:void(0)"></a>
+                <a class="next" href="javascript:void(0)"></a>
+
+            </div>
+        </div>
+        <script type="text/javascript">
+            jQuery(".slideBox1").slide({mainCell:".bd1 ul",autoPlay:true});
+        </script>
+        <div class="box">
+            <p class="title"><span>政策法规</span><a href="$ctx/search/?categoryId=1" title="">more</a> </p>
+            <div id="scrollDiv">
+                <ul class="boxList">
+                #foreach($lawRule in $lawRules)
+                    <li><i></i><a href="$ctx/article/$!{lawRule.id}" title="">${lawRule.title}</a></li>
+                #end
+                </ul>
+                <ul class="swap"></ul>
+            </div>
+        </div>
+        <ul class="but">
+            <li><a href="$ctx/article/18" title="">招标文件购买流程</a></li>
+            <li><a href="$ctx/downloadType?type=1" title="">《招标文件发售登记表》</a></li>
+            <li><a href="$ctx/downloadType?type=2" title="">无行贿犯罪档案记录证明</a></li>
+            <li><a href="$ctx/downloadType?type=3" title="">《公平竞争承诺书》下载</a></li>
+        </ul>
+
+        <div class="publicity">
+            <p class="title"><span>招标公示</span><a href="$ctx/search/?categoryId=2" title="">more</a> </p>
+            <ul class="boxList">
+                #foreach($tender in $tenders)
+                    <li><i></i><a href="$ctx/article/$!{tender.id}" title="">${tender.title}</a></li>
+                #end
+            </ul>
+        </div>
+        <div class="publicity">
+            <p class="title"><span>澄清更正公告</span><a href="$ctx/search/?categoryId=3" title="">more</a> </p>
+            <ul class="boxList">
+                #foreach($clarify in $clarifys)
+                    <li><i></i><a href="$ctx/article/$!{clarify.id}" title="">${clarify.title}</a></li>
+                #end
+            </ul>
+        </div>
+        <div class="publicity">
+            <p class="title"><span>中标公示</span><a href="$ctx/search/?categoryId=4" title="">more</a> </p>
+            <ul class="boxList">
+                #foreach($winBid in $winBids)
+                    <li><i></i><a href="$ctx/article/$!{winBid.id}" title="">${winBid.title}</a></li>
+                #end
+            </ul>
+        </div>
+
+    </div>
+</div>

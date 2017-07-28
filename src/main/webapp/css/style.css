@@ -1,0 +1,143 @@
+@import 'common.css';
+
+.warpper{ width: 1009px; margin: 0 auto; height: auto; overflow: hidden}
+.top {width: 100%; height: 160px; background:url('../img/topBg.jpg') repeat-x;}
+.logo{float:left; margin-top: 35px;}
+.topRight{float: right; margin-top: 27px;font-size: 16px; color: #6f6f6f}
+.topRight img{float: left;margin:-5px 8px 0 0; }
+.topRight a{color: #6f6f6f;}
+.topRight .search{clear: both;float: right; width: 248px; height: 38px; position: relative;margin-bottom: 8px;}
+.topRight .search input{clear: both;width: 248px; height: 38px; border: none;background: url('../img/searchBg2.png') no-repeat; outline: none; padding: 0 0 0 8px}
+.topRight .search button{position: absolute; right: 11px; top: 4px; width: 30px; height: 30px;font-size:0;line-height: 55px; background: url('../img/icon.png') no-repeat -5px -112px;border: none}
+.nav{clear: both; width: 100%; height: 52px; background: url('../img/navBg1.png') repeat-x;}
+.nav ul{width: 994px; height: 52px; background: url('../img/navBg.png') no-repeat center top;margin: 0 auto ;padding: 0 0 0 5px}
+.nav ul li{float: left;width: 123px; text-align: center}
+.nav ul li a{display: block;width: 123px; height: 45px;color: #fff; font-size: 16px; line-height: 45px;}
+.nav ul li a:hover{color:#fff600}
+.main{clear: both; width: 100%; height: auto; background: url('../img/bg.jpg') no-repeat top center;}
+.swiper-container{width: 980px; height: auto; margin: 12px auto 0}
+.swiper-container1{width: 236px; height: 178px; margin: 19px auto 0;overflow: hidden}
+.box{float: left; width: 321px; height: 392px; background: url('../img/bg1.jpg') no-repeat; margin:14px 9px 0 0;}
+.office{float: left; width: 434px; height: 392px; background: url('../img/bg2.jpg') no-repeat; margin:14px 9px 0 0;}
+
+.box .title{width: 100%; overflow: hidden}
+.box .title span{float: left; font-size: 16px;color: #1c7db7; margin: 13px 0 0 23px;}
+.box .title a{float: right;width:36px;height: 14px;display: block;background: url('../img/icon.png') no-repeat -4px -5px; font-size: 0;line-height: 50px;margin: 15px 16px 0 0 }
+.boxList{clear: both; width: 80%; margin: 25px auto 0; }
+.boxList li{width: 100%; border-bottom: 1px dashed #e5e5e5;position: relative; padding: 0 0 2px 5px; margin-top: 6px}
+.boxList li i{position: absolute; left: -12px; width: 15px;height: 15px;display: block;background: url('../img/icon.png') no-repeat -4px -42px;}
+.boxList li a{width: 100%;display: block; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; color: #8d8c8c}
+.boxList li a:hover{color: #0068b7}
+
+
+
+.but{float: left; width: 218px; margin-top: 3px;}
+.but li{width: 218px; height:46px; text-align:center; margin-top: 15px; }
+.but li a{display: block; width: 218px; height:46px;background: url('../img/but.jpg') no-repeat; font-size: 16px;color: #fefefe; line-height: 43px;}
+.but li a:hover{color:#000}
+
+.publicity{float: left; width: 321px; height:354px; background: url('../img/bg3.jpg') no-repeat; margin:14px 15px 0 0;}
+.publicity:last-child{margin: 14px 0 0 0}
+.publicity .title{width: 100%; overflow: hidden}
+.publicity .title span{float: left;width: 125px;text-align: center; font-size: 16px;color: #fff; margin: 7px 0 0 0;}
+.publicity .title a{float: right;width:36px;height: 14px;display: block;background: url('../img/icon.png') no-repeat -4px -5px; font-size: 0;line-height: 50px;margin: 10px 16px 0 0 }
+.publicity .boxList li{margin-top: 10px}
+
+.footer{width: 100%; height:76px;position: relative; margin-top: 20px; background: url('../img/footerBg.jpg') repeat-x; padding: 0; overflow: hidden}
+.footer ul{width: 1000px; height: 76px;  background: url('../img/footerBgImg.jpg') no-repeat left top; margin:0 auto}
+.footer ul li{float: left; color: #fff; height: 16px; border-right: 1px solid #fff; margin: 23px 0 0 0; padding: 0 10px;line-height: 16px}
+.footer ul li:last-child{border: none}
+.footer ul li a{color: #fff; font-size: 14px;}
+#scrollDiv{ margin: 23px auto; height: 280px; overflow: hidden}
+#scrollDiv .boxList{margin: 0 auto;}
+#jsddm li a:hover	{color:#fff600}
+#jsddm li ul{margin: 0;padding: 0;position: absolute;visibility: hidden;z-index: 99;width: 122px;background: none}
+#jsddm li ul li{float:none;display: inline}
+#jsddm li ul li a{	width: 121px;height: 38px;background:url('../img/nav_1.png');color: #fff}
+#jsddm li ul li a:hover{color:#fff600}
+
+.searchLine{width: 1004px; height:54px;background: url('../img/searchBg.png') no-repeat;margin:5px auto 0 ;overflow: hidden}
+.searchLine .viceLogo{float: left;font-size: 16px;color: #2172aa; margin: 15px 0 0 40px}
+.searchLine .viceSearch{float: right;height: 20px; border-left:3px solid #2887c0; line-height: 20px; margin: 13px 30px 0 0; padding: 0 0 0 15px;font-size: 16px;color: #2172aa }
+.searchLine .viceSearch input{width:279px; height: 24px;background: url('../img/searchBg1.png') no-repeat;border: none; margin-left: 14px; }
+.boxLeft{float: left;width: 246px; height: 738px; background: url('../img/left_bottom.png') no-repeat bottom left;margin-top: 13px;}
+.tenderMenu{ width: 246px; min-height: 327px; text-align:center;  position: relative;background: url('../img/leftBg.png') repeat-y; }
+.titleImg{ margin-top: 45px;}
+.tenderMenu ul li{margin: 20px 0 0 30px;position: relative}
+.tenderMenu ul li a{ display: block; color:#1e6ca7; width: 181px; height: 44px; background: url('../img/menu2.png') no-repeat;font-size: 16px; line-height: 40px;}
+.tenderMenu ul li a.aLink{background: url('../img/menu1.png') no-repeat;color:#fff}
+.contactList{clear: both;display: block; margin-top: 50px;}
+.contactList li{width: 234px; height: 53px; margin-top: 28px;}
+.contactList li a{display: block; font-size: 16px; width: 234px; height: 53px; line-height: 55px; background: url('../img/leftBg.jpg') no-repeat;}
+.contactList li a i{width: 37px; height: 35px;float: left; display: block; background: url('../img/icon.png') no-repeat; margin: 9px 15px 0 41px;}
+.contactList li a i.icon1{background-position:-4px -176px;width: 41px;}
+.contactList li a i.icon2{background-position:-4px -250px;}
+.contactList li a:hover{color:#999}
+.boxRight{float: left;width: 746px; height: 738px;  border: 1px solid #dfdfdf; margin: 20px 0 0 10px;}
+.level2{display: none}
+.tenderTop{text-align: right; margin-bottom: 28px;}
+.tenderMenu ul li .level2{position: absolute;top: 38px; left: 5px; z-index: 2;width: 168px; height: auto; background:#fff; border: 1px solid #ddd; border-radius: 0 0 3px 3px }
+.tenderMenu ul li .level2 li{margin: 0;padding: 0;width: 168px; text-align: center}
+.tenderMenu ul li .level2 li a{background: none;color: #2375ac;width: 148px; margin: 0 auto; border-bottom: 1px dashed #ddd}
+.tenderMenu ul li .level2 li a:hover{color:#ff0404}
+.position{ padding: 10px 0 0 10px}
+.listTable {width: 90%; margin: 15px auto; border-spacing: 0; border-collapse: collapse; line-height: 35px;}
+.listTable thead th{font-size: 16px;text-align: center;background: #eee; padding: 0 0 0 1%}
+.listTable td{font-size: 14px;text-align: center;padding: 0 0 0 1%; border-bottom: 1px solid #eee}
+.listTable .left{text-align: left}
+
+*{margin:0; padding:0; list-style:none; }
+body{ background:#fff; font:normal 12px/22px 宋体;  }
+img{ border:0;  }
+a{ text-decoration:none; color:#333;  }
+
+/* 本例子css */
+.slideBox{ width:980px; height:240px; overflow:hidden; position:relative; border:1px solid #ddd; margin: 0 auto }
+.slideBox .hd{ height:15px; overflow:hidden; position:absolute; right:5px; bottom:5px; z-index:1; }
+.slideBox .hd ul{ overflow:hidden; zoom:1; float:left;  }
+.slideBox .hd ul li{ float:left; margin-right:2px;  width:15px; height:15px; line-height:14px; text-align:center; background:#fff; cursor:pointer; }
+.slideBox .hd ul li.on{ background:#f00; color:#fff; }
+.slideBox .bd{ position:relative; height:100%; z-index:0;   }
+.slideBox .bd li{ zoom:1; vertical-align:middle; }
+.slideBox .bd img{ width:980px; height:240px; display:block;  }
+
+/* 下面是前/后按钮代码，如果不需要删除即可 */
+.slideBox .prev,
+.slideBox .next{ position:absolute; left:3%; top:50%; margin-top:-25px; display:block; width:32px; height:40px; background:url(../img/slider-arrow.png) -110px 5px no-repeat; filter:alpha(opacity=50);opacity:0.5;   }
+.slideBox .next{ left:auto; right:3%; background-position:8px 5px; }
+.slideBox .prev:hover,
+.slideBox .next:hover{ filter:alpha(opacity=100);opacity:1;  }
+.slideBox .prevStop{ display:none;  }
+.slideBox .nextStop{ display:none;  }
+
+/* 本例子css */
+.slideBox1{ width:420px; height:320px; overflow:hidden; position:relative; border:1px solid #ddd; margin: 12px auto 0 }
+.slideBox1 .hd1{ height:15px; overflow:hidden; position:absolute; right:5px; bottom:5px; z-index:1; }
+.slideBox1 .hd1 ul{ overflow:hidden; zoom:1; float:left;  }
+.slideBox1 .hd1 ul li{ float:left; margin-right:2px;  width:15px; height:15px; line-height:14px; text-align:center; background:#fff; cursor:pointer; }
+.slideBox1 .hd1 ul li.on{ background:#f00; color:#fff; }
+.slideBox1 .bd1{ position:relative; height:100%; z-index:0;   }
+.slideBox1 .bd1 li{ zoom:1; vertical-align:middle; }
+.slideBox1 .bd1 img{ width:420px; height:320px; display:block;  }
+
+/* 下面是前/后按钮代码，如果不需要删除即可 */
+.slideBox1 .prev,
+.slideBox1 .next{ position:absolute; left:3%; top:50%; margin-top:-25px; display:block; width:32px; height:40px; background:url(../img/slider-arrow.png) -110px 5px no-repeat; filter:alpha(opacity=50);opacity:0.5;   }
+.slideBox1 .next{ left:auto; right:3%; background-position:8px 5px; }
+.slideBox1 .prev:hover,
+.slideBox1 .next:hover{ filter:alpha(opacity=100);opacity:1;  }
+.slideBox1 .prevStop{ display:none;  }
+.slideBox1 .nextStop{ display:none;  }
+
+.messageForm{width: 80%;margin: 8% auto 0;height: auto;}
+.messageForm p{clear: both;padding: 8px 0}
+.messageForm p .form_name{float: left;width: 20%;text-align: right;color: #0a001f;line-height: 30px}
+.messageForm p input, .messageForm p textarea{float: left;width: 60%;border: 1px solid #c2c2c2;padding: 6px 0;}
+.messageBtn{margin-left: 20%;width: 50%;}
+.messageBtn button{float: left;width: 48%;margin-right: 2%;padding: 6px 10px}
+.messageTitle{width: 95%;padding: 10px 0;font-size: 16px;color:#000;margin: 0 auto;border-bottom: 1px solid #c2c2c2}
+.clearfix {
+    width: 90%;
+}
+.copyright{clear:both;width: 978px;margin: 10px auto 0;color:#ccc;}
+.copyright a{color:#000}

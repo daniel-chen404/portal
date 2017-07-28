@@ -1,0 +1,10 @@
+<div class="main">
+    <div class="warpper">
+        #parse("common/lefter.vm")
+        <div class="boxRight">
+            <section class="article-content clearfix article-page">
+                ${article.content}
+            </section>
+        </div>
+    </div>
+</div>
