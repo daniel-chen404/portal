@@ -20,7 +20,7 @@
                             <td>${article.category.name}</td>
                             <td>${article.pubDate}</td>
                             <td><span class="badge bg-red">${article.clicks}</span></td>
-                            <td><a href="#">看看</a> </td>
+                            <td><a href="$ctx/article/${article.id}">看看</a> </td>
                         </tr>
                         #end
                     </tbody>
