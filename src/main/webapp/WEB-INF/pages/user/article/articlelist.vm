@@ -79,6 +79,14 @@
                 #end
             </ul>
         </div>
+    <div class="publicity">
+        <p class="title"><span>中标公告</span><a href="$ctx/search/?categoryId=16" title="">more</a> </p>
+        <ul class="boxList">
+            #foreach($winBid in $winBids)
+                <li><i></i><a href="$ctx/article/$!{winBid.id}" title="">${winBid.title}</a></li>
+            #end
+        </ul>
+    </div>
 
     </div>
 </div>

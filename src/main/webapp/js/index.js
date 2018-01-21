@@ -9,7 +9,7 @@ $(document).ready(function(){
         jsddm_close();
         ddmenuitem = $(this).find('ul').eq(0).css('visibility', 'visible');
         $(this).find('a').eq(0).css("color","#fff600");
-        $(this).find('ul').eq(0).find('li:last-child').find('a').css('background',"url('.//img/nav_2.png') no-repeat 0 -3px");
+        $(this).find('ul').eq(0).find('li:last-child').find('a').css('background',"url('../img/nav_2.png') no-repeat 0 -3px");
     }
 
     function jsddm_close()

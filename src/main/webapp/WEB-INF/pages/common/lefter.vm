@@ -4,7 +4,8 @@
         <ul>
             <li><a href="$ctx/search/?categoryId=2">招标公告</a></li>
             <li><a href="$ctx/search/?categoryId=3">澄清/更正/延期公告</a></li>
-            <li><a href="$ctx/search/?categoryId=4">中标公示</a></li>
+            <li><a href="$ctx/search/?categoryId=4"">中标公示</a></li>
+            <li><a href="$ctx/search/?categoryId=16"">中标公告</a></li>
         </ul>
     </div>
 
