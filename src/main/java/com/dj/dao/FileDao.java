@@ -24,4 +24,7 @@ public interface FileDao {
 
     public TextFile getOneFileByType(TextFile file) throws Exception;
 
+
+    public Integer delete(Integer id) throws  Exception;
+
 }

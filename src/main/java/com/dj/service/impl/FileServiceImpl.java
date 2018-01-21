@@ -70,4 +70,12 @@ public class FileServiceImpl implements FileService {
         }
         return textFile;
     }
+    public Integer delete(Integer id) {
+        try {
+            return fileDao.delete(id);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return 0;
+    }
 }

@@ -11,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -63,6 +64,18 @@ public class ManageFileController {
         return "admin/index";
     }
 
+    //显示创建页面
+    @RequestMapping(value = "delete/{id:[0-9]+}")
+    public String delete(@PathVariable("id") Integer id, HttpSession session) {
+        TextFile textFile = fileService.getTextFile(id);
+        String realPath = filePath+textFile.getPath()+"/";
+
+        File file = new File(realPath, textFile.getName());
+        file.delete();
+        fileService.delete(id);
+        return "redirect:/manage/file";
+    }
+
    @RequestMapping(value ="uploadFile",method = RequestMethod.POST)
    public String upload( ModelMap model,@RequestParam(value = "file", required = false) MultipartFile file, TextFile textFile,HttpServletRequest request) throws IOException {
        SimpleDateFormat formatter = new SimpleDateFormat("yyyyMMdd");
@@ -82,6 +95,7 @@ public class ManageFileController {
            SimpleDateFormat createsd = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
            textFile.setCreateDate(createsd.format(new Date()));
            textFile.setName(fileName);
+           textFile.setRemark(file.getOriginalFilename());
            fileService.saveFile(textFile);
            return "redirect:/manage/file";
        } catch (Exception e) {

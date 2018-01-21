@@ -50,7 +50,7 @@
                                 <select name="type" id="sel"
                                         class="form-control select2 select2-hidden-accessible"
                                         style="width: 100%;" tabindex="-1" aria-hidden="true">
-                                        <option value="1" id="1">招标文件发售等级表</option>
+                                        <option value="1" id="1">采购文件发售登记表</option>
                                         <option value="2" id="2">无行贿犯罪档案记录证明</option>
                                         <option value="3" id="3">公平竞争承诺书</option>
                                          <option value="4" id="4">其他</option>

@@ -23,5 +23,8 @@ public interface FileService {
 
     public TextFile getOneFileByType(String type);
 
+    public Integer delete(Integer id);
+
+
 
 }

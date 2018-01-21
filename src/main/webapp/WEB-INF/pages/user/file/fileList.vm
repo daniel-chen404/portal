@@ -12,10 +12,10 @@
                     </tr>
                         #foreach($file in $fileList)
                         <tr>
-                            <td>${file.name}</td>
+                            <td>${file.remark}</td>
                             <td>
                                 #if(${file.type}=='1')
-                                    招标文件发售等级表
+                                    采购文件发售登记表
                                 #elseif(${file.type}=='2')
                                         无行贿犯罪档案记录证明
                                 #elseif(${file.type}=='3')

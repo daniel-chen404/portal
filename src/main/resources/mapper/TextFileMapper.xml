@@ -37,5 +37,9 @@
       select * from t_textfile where type=#{type} and id in (select max(id) from t_textfile where type=#{type})
     </select>
 
+    <select id="delete" resultMap="result" parameterType="com.dj.model.TextFile">
+      delete  from t_textfile where id=#{id}
+    </select>
+
 
 </mapper>

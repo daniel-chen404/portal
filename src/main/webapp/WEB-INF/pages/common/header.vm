@@ -18,13 +18,13 @@
     <div class="nav">
         <ul id='jsddm'>
             <li><a href="$ctx" title="">首页</a></li>
-            <li><a href="$ctx/article/13" title="">关于我们</a></li>
-            <li><a href="$ctx/article/13" title="">业务范围</a></li>
+            <li><a href="$ctx/article/14" title="">关于我们</a></li>
+            <li><a href="$ctx/article/19" title="">业务范围</a></li>
             <li><a href="$ctx/search/?categoryId=1" title="">政策法规</a></li>
             <li><a href="$ctx/search/?categoryId=2" title="">招标信息</a>
                 <ul class="alink">
                     <li><a href="$ctx/search/?categoryId=2">招标公告</a></li>
-                    <li><a href="$ctx/search/?categoryId=3">澄清更正公告</a></li>
+                    <li><a href="$ctx/search/?categoryId=3">澄清/更正/延期公告</a></li>
                     <li><a href="$ctx/search/?categoryId=4"">中标公示</a></li>
                 </ul>
             </li>
